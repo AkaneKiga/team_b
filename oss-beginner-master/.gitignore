@@ -1,0 +1,13 @@
+bin
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/.cache
+/.cache-main
+/.cache-tests
+/.DS_Store
+/RUNNING_PID

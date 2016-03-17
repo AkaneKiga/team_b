@@ -1,0 +1,11 @@
+@(form: Form[models.AppUser])
+
+@main("ログイン") {
+	@helper.form(action = routes.AuthController.login()) {
+    	@helper.inputText(form("username"), '_label-> "Username")
+    	@helper.inputPassword(form("password"), '_label-> "Password")
+		<input type="submit" value="ログイン">
+		or
+		<a href="@routes.AuthController.register">新規登録</a>
+   }
+}

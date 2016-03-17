@@ -1,0 +1,9 @@
+@(form: Form[models.AppUser])
+
+@main("Sign-up") {
+  @helper.form(action = routes.AuthController.create()) {
+	@helper.inputText(form("username"), '_label-> "Username")
+	@helper.inputPassword(form("password"), '_label-> "Password")
+	<input type="submit" value="Register">
+  }
+}
